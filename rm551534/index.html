@@ -1,33 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Basico</title>
-</head>
-<body>
-    
-    <header>
-        <h1 style="color:red;background: #D9D9D9;">MEU SITE</h1>
-    
-   
-    <nav>
-        <ul>
-            <li><a href="#">GAMES</a></li>
-            <li><a href="#">MOBILE</a></li>
-            <li><a href="#">TECH</a></li>
-        </ul>
+    <title>Layout Básico</title>
 
-    </nav>   
-    
+    <link rel="stylesheet" href="./css/estilo.css">
+
+    <!-- <style>
+        /*
+            Este é um comentário em código CSS!
+
+            Para iniciar o trabalho necessitamos uilizar seletores!
+        
+        Ex:
+        seletor{
+            propriedade : valor;
+        }
+        */
+
+        /* Este tipo de seleção é em cascata! */
+        /* h1{
+            color: red;
+        }
+        h2{
+            color:green;
+        } */
+
+        /* Seleção hierarquica! */
+        /* section > h2{
+            color : red;
+            
+        } */
+
+        /* Multipla seleção 
+
+        h1,li{
+            color:blue;
+        }
+*/
+
+        /* seletores especiais
+        
+        ID = utilizamos o hashtag ou cerquilha ( # ) para identificar este tipo de seletor.
+        */
+        /* #meu-titulo{
+            color:blue;
+            text-align: center;
+            font-family: 'Trebuchet MS';
+        }
+
+        /* Utilizando o class como identificador de seletor. */
+
+        /* Utilizando o seletor class e sendo pouco específico! */
+        /* .texto-formatado{
+            color:red;
+            font-weight: bold;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 2px blue;
+            font-family:Helvetica;
+        } */
+
+    /* Utilizando o seletor class e sendo muito específico! */
+    /* h3.texto-formatado{
+        background-color: bisque;
+        text-align: center;
+        text-transform: uppercase;
+    } */
+
+
+    </style> -->
+
+</head>
+
+<body>
+
+    <header>
+        <!-- <h1 style="color:blue;background: #D9D9D9;">MEU SITE</h1> -->
+        <h1 id="meu-titulo">MEU SITE</h1>
+        <nav>
+            <ul>
+                <li><a href="#">GAMES</a></li>
+                <li><a href="#">MOBILE</a></li>
+                <li><a href="#">TECH</a></li>
+            </ul>
+        </nav>
 
     </header>
 
     <section id="sobre">
-        <h2>Sobre</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis odio provident laudantium repellat. Voluptatibus delectus possimus deserunt odio quidem reprehenderit officiis accusantium modi, distinctio id quos dicta beatae nobis quibusdam.</p>
+        <h2 class="texto-formatado">Sobre</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident molestias, laudantium ad quos nemo laborum
+            vel excepturi est dolores optio soluta cupiditate sint repellat quidem quas. Quas deserunt repellendus
+            voluptate.</p>
+        <h2>Mais</h2>
+        <p class="texto-formatado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident molestias, laudantium ad quos nemo laborum
+                vel excepturi est dolores optio soluta cupiditate sint repellat quidem quas. Quas deserunt repellendus
+        voluptate.</p>
+        <div>
+            <h2>Estou na div</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta provident ab, eveniet necessitatibus nulla explicabo dicta at similique doloremque sunt? </p>
+        </div>
     </section>
 
+    <h2 class="texto-formatado">TESTE - FORA DA SECTIOn</h2>
+
+    <div>
+        <h3 class="texto-formatado">Novo título</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum fuga ea vero, vitae ipsum cum voluptatibus sint deleniti ullam! Velit!</p>
+    </div>
+
 </body>
+
 </html>
